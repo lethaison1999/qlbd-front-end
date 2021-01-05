@@ -1,0 +1,567 @@
+/*
+  common
+*/
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.black {
+  color: #000 !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.fz-20 {
+  font-size: 20px !important;
+}
+
+/* Header */
+
+.header-top .logo {
+  height: 60px;
+}
+
+.header-top .logo a img {
+  height: 24px;
+  display: block;
+}
+
+.header-bottom {
+  transition: all .25s ease;
+  background-color: #c80a00;
+  height: 60px;
+}
+
+.header-bottom nav {
+  height: 100%;
+}
+
+.header-bottom nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-bottom nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color .15s ease-in-out;
+  background: none;
+  padding: 15px 20px 15px 10px;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.header-bottom nav ul li a.active {
+  background-color: #a70b00;
+}
+
+.header-bottom nav ul li.divider {
+  margin-right: auto;
+}
+
+.header-bottom nav ul li:hover a {
+  background-color: #a70b00;
+}
+
+/* Footer */
+
+footer p {
+  color: #818183;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #2b3036;
+  padding: 50px 0;
+}
+
+.main {
+  background-color: #e5e5e5;
+  padding-bottom: 30px;
+  min-height: calc(100vh - 241px);
+}
+
+.section-heading {
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  hyphens: auto;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Clubs */
+
+.club {
+  height: 114px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.club .left {
+  width: calc(100% - 114px);
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.club .left .club-name {
+  height: 50%;
+}
+
+.club .left>div {
+  display: flex;
+  align-items: center;
+}
+
+.club .left .club-name a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.club .left .club-name a:hover {
+  text-decoration: underline;
+}
+
+.club .left .club-stadium {
+  height: 50%;
+  font-weight: 400;
+}
+
+.club .right {
+  width: 114px;
+}
+
+.club .right .logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.club .right .logo img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Login */
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login form {
+  width: 35%;
+}
+
+.login form>div {
+  margin-bottom: 10px;
+}
+
+.login form input {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #e0e1e3;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 32px;
+  font-size: 13px;
+  padding-left: 7px;
+  text-indent: 5px;
+  border-color: #b6bdc5;
+  color: #4e515e;
+  outline: none;
+  border-radius: 4.5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+}
+
+.btn-login {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 4.5px;
+  color: #fff;
+  background-color: #c80a00;
+  align-content: center;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Results */
+
+.matchs-select {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 24px;
+}
+
+.matchs-select>div {
+  margin-left: 14px;
+}
+
+.matchs-select select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 8px 10px;
+  width: 160px;
+}
+
+.kickoff-date {
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  font-size: 15px;
+  color: #212529;
+  background-color: #fff;
+}
+
+.match-list {
+  margin-top: 4px;
+}
+
+.match-list>div {
+  border-top: 1px solid #f3f3f3;
+}
+
+.match-list>div:first-child {
+  border: none;
+}
+
+.match-list>div:last-child {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.match-item {
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.match-item:hover {
+  background-color: #eee;
+}
+
+.match-item>a {
+  color: #151515;
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: center;
+  padding: 19px 0;
+}
+
+.match-item .team-home, .match-item .team-away {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.club-name {
+  font-size: 16px;
+}
+
+.club-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.match-results .score {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.match-results .stadium-name {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+/* Match */
+
+.match-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  margin-top: 10px;
+}
+
+.match-center a {
+  color: #000;
+}
+
+.match-center .text-box {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+  margin-top: 12px;
+}
+
+.match-center .text-box .match-day, .match-center .text-box .stadium {
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px 2px;
+  font-size: 14px;
+  justify-content: center;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match-box {
+  display: flex;
+}
+
+.match-box .home, .match-box .away {
+  padding: 4px 35px;
+}
+
+.match-box img {
+  width: 120px;
+  height: 120px;
+}
+
+.match-box .result {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.match-box .result .score, .match-box .result .score-halftime {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.match-box .result .score {
+  margin-top: 20px;
+}
+
+.match-box .result .score-halftime {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.match-box .result .halftime {
+  margin-top: 24px;
+  text-transform: uppercase;
+  padding: 4px 55px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.match-center .names {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000080;
+  padding: 12px 10px 57px;
+}
+
+.match-center .names>a {
+  width: 50%;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.match-center .names>a:first-child {
+  text-align: left;
+}
+
+.match-center .names>a:last-child {
+  text-align: right;
+}
+
+/*
+  Club
+*/
+
+.club-info {
+  color: #fff;
+  padding: 0 95px;
+}
+
+.club-info .stadium-name {
+  font-size: 18px;
+  padding-top: 9px;
+}
+
+.club-info .club-and-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.club-info .club-and-logo .club-name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.club-info .club-and-logo .club-logo img {
+  width: 120px;
+  height: 120px;
+}
+
+.club-info .links {
+  padding-bottom: 10px;
+}
+
+.club-info .links a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 14px;
+}
+
+.club-info .links a i {
+  padding-right: 6px;
+}
+
+/*
+  Match - Add
+*/
+
+.bundesliga-form {
+  display: flex;
+  justify-content: center;
+}
+
+.bundesliga-form form {
+  width: 75%;
+}
+
+.bundesliga-form form>div {
+  margin-bottom: 10px;
+}
+
+.bundesliga-form form input {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #b6bdc5;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 32px;
+  font-size: 13px;
+  padding-left: 7px;
+  text-indent: 5px;
+  color: #4e515e;
+  outline: none;
+  border-radius: 4.5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+}
+
+.btn-submit {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 4.5px;
+  color: #fff;
+  background-color: #c80a00;
+  align-content: center;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.bundesliga-form form .row>div {
+  margin-bottom: 4px;
+}
+
+.bundesliga-form select {
+  width: 100%;
+  border: 1px solid #b6bdc5;
+  border-radius: 4.5px;
+  font-size: 12px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+/*
+  Tools
+*/
+
+.tools {
+  display: flex;
+}
+
+.tools>a {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #c3c3c3;
+  font-size: 16px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 8px 0;
+  border-bottom: 2px solid #c3c3c3;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.tools>a.active {
+  border-bottom: 2px solid #c80a00;
+  color: #c80a00;
+}
+
+.tools>a:hover {
+  border-bottom: 2px solid #c80a00;
+  color: #c80a00;
+}
+
+.tools>a:last-child {
+  border-right: none;
+}
